@@ -9,14 +9,17 @@
 
 //#import <Foundation/Foundation.h>
 #import "MvpCell.h"
-//#import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 //#import "YYWebImage.h"
-#import "Masonry.h"
+//#import "Masonry.h"
 
 
 @implementation MvpCell
 
-
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    self.presenter = [[MvpPresenter alloc]initWithView:self.];
+}
 
 
 @end

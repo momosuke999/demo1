@@ -43,7 +43,7 @@
 
 @property(nonatomic, copy)NSString * alt;
 
-@property(nonatomic, copy) NSString * id1;
+@property(nonatomic, copy) NSString * idm;
 
 @end
 
@@ -58,7 +58,7 @@
 
 @property(nonatomic, copy)NSString * alt;
 
-@property(nonatomic, copy) NSString * id2;
+@property(nonatomic, copy) NSString * idm;
 
 
 @end

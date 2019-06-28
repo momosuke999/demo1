@@ -21,7 +21,11 @@
     self.presenter = [[MvpTextPresenter alloc] initWithView:self];
 }
 
--(void)setText:(NSString *)film{
-    self.filmNameLabel.text = film;
+-(void)setText:(NSString *)title{
+    self.filmNameLabel.text = title;
 }
+
+//-(void)setView:(NSObject *)view{
+  //
+//}
 @end

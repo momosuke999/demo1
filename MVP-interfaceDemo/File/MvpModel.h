@@ -7,6 +7,7 @@
 //
 
 
+
 #import "MvpSubModel.h"
 
 @interface MvpModel : NSObject
@@ -25,7 +26,7 @@
 
 @property(nonatomic, copy) NSString * mainland_pubdate;
 
-@property(nonatomic,assign) bool * has_video;
+@property(nonatomic,assign) bool has_video;
 
 @property(nonatomic, copy) NSString * original_title;
 
@@ -35,7 +36,7 @@
 
 @property(nonatomic, strong)NSArray * pubdates;
 
-@property(nonatomic, strong) NSArray * year;
+@property(nonatomic, assign) NSInteger year;
 
 @property(nonatomic, strong) NSDictionary * images;
 
