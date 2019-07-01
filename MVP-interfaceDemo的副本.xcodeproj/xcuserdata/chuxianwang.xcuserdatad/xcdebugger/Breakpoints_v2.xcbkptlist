@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MVP-interfaceDemo/Presenter/MvpPresenter.m"
-            timestampString = "583414682.460554"
+            timestampString = "583669349.542311"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "MvpPresenter"
-            landmarkType = "3">
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-init"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,45 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MVP-interfaceDemo/Presenter/MvpPresenter.m"
-            timestampString = "583414682.461218"
+            timestampString = "583669349.542873"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "MvpPresenter"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVP-interfaceDemo/Presenter/MvpPresenter.m"
-            timestampString = "583414682.461576"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "MvpPresenter"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVP-interfaceDemo/ViewController /ViewController.m"
-            timestampString = "583414984.252205"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-init"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

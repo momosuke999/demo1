@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "TextViewController .h"
+#import "TextViewController.m"
 #import <UIKit/UIKit.h>
 
 @interface TextViewController()
 @property(nonatomic,weak)IBOutlet UITextView * filmnameView;
+@property(nonatomic,weak)IBOutlet UITextView * filmnameEnView;
+
 @end
 
 
@@ -35,7 +38,11 @@
     [super didReceiveMemoryWarning];
 }
 
--(void)setText:(NSString*)film{
+-(void)setf:(NSString*)film{
     self.filmnameView.text = film;
+}
+
+-(void)setFilmnameView:(UITextView *)filmnameView{
+    
 }
 @end

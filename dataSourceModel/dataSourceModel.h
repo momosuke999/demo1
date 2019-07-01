@@ -6,11 +6,24 @@
 //  Copyright © 2019年 CHUXIANWANG. All rights reserved.
 //
 
-#import"MvpModel.h"
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface dataSourceModel : NSObject
+//put dataSource into block
 
-@property(nonatomic, strong) NSArray* myDataArray;
+typedef void (^CellConfigureBefore)(id cell, id model, NSIndexPath * indexPath);
+
+@interface dataSourceModel : NSObject<UITableViewDataSource, UITableViewDelegate>
+
+
+@property(nonatomic, strong) NSMutableArray *myDataArray;
+
+-(id)initWithIdentifier:(NSString*)identifier configureBlock:(CellConfigureBefore) before;
+
+-(void)addMyDataArray:(NSArray *)datas;
+
+-(id)modelsAtIndexPath:(NSIndexPath*)indexPath;
 
 @end
+
+

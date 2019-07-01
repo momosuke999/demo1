@@ -9,8 +9,8 @@
 #import "MvpModel.h"
 #import <UIKit/UIKit.h>
 
-@protocol MvpInterfaceProtocol
-
+@protocol MvpInterfaceProtocol<NSObject>
+/*
 
 -(void)setView:(NSObject*) view;
 -(void)setViewController:(UIViewController*) viewController;
@@ -20,9 +20,9 @@
 -(void)present;
 -(void)presentWithModel:(id)model viewController:(UIViewController*)viewController;
 
+*/
 
-
-//- (void)onGetResponseFilmsEntity:(NSArray<MvpModel*>*)filmsEntity fail:(NSInteger) errorCode des:(NSString *)des;
+-(void)reloadDataFromUI;
 
 @end
 

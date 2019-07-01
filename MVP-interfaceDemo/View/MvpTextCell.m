@@ -11,6 +11,8 @@
 
 @interface MvpTextCell ()
 @property(nonatomic,weak) IBOutlet UILabel * filmNameLabel;
+@property(nonatomic,weak) IBOutlet UILabel * filmNameEnLabel;
+
 
 @end
 
@@ -21,9 +23,14 @@
     self.presenter = [[MvpTextPresenter alloc] initWithView:self];
 }
 
--(void)setText:(NSString *)title{
+-(void)setTitle:(NSString *)title{
     self.filmNameLabel.text = title;
 }
+
+-(void)setTitleEn:(NSString*)original_title{
+    self.filmNameEnLabel.text = original_title;
+}
+
 
 //-(void)setView:(NSObject *)view{
   //

@@ -20,9 +20,14 @@
 
 //@property (nonatomic, strong) MvpModel * mvpM;
 
-@property (nonatomic) MvpPresenter *presenter;
+//@property (nonatomic) MvpPresenter *presenter;
+@property(nonatomic,strong) UILabel * filmNameLabel;
+@property(nonatomic,strong) UILabel * filmNameEnLabel;
+@property(nonatomic,strong) UIImageView * filmIconLabel;
 
 
 @end
+
+
 
 

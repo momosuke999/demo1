@@ -10,32 +10,57 @@
 #import <Foundation/Foundation.h>
 #import "dataSourceModel.h"
 
+@interface dataSourceModel()
+
+@property(nonatomic,strong)IBInspectable NSString* cellIdentifier;
+
+@property(nonatomic, copy) CellConfigureBefore cellConfigBefore;
+
+@end
+
 @implementation dataSourceModel
 
--(instancetype) init{
-    self = [super init];
-    if(self){
-    NSURL * url = [NSURL URLWithString:@"https://api.douban.com/v2/movie/in_theaters?apikey=0b2bdeda43b5688921839c8ecb20399b&city=%B1%B1%BE%A9&start=0&count=100&client=&udid="];
-    NSURLRequest * request = [NSURLRequest requestWithURL:url];
-    
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
-        NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-        NSArray *  subjectsArray = dict[@"subjects"];
-        NSMutableArray *dataArray = [[NSMutableArray alloc] init];
-        // dataArray = [[NSMutableArray alloc] init];
-        for (NSDictionary * tempDict in subjectsArray) {
-            MvpModel * model = [MvpModel mvpModelWithDict:tempDict];
-            [dataArray addObject:model];
-        }
-        self.myDataArray = dataArray;
-        
-    }];
+-(id)initWithIdentifier:(NSString *)identifier configureBlock:(CellConfigureBefore)before{
+    if(self = [super init]){
+        _cellIdentifier = identifier;
+        _cellConfigBefore = [before copy];
     }
-    
-
     return self;
 }
 
+-(void)addMyDataArray:(NSArray *)datas{
+    if(!datas) return;
+    if(self.myDataArray.count > 0){
+        [self.myDataArray removeAllObjects];
+    }
+    [self.myDataArray addObjectsFromArray:datas];
+}
 
+-(id)modelsAtIndexPath:(NSIndexPath *)indexPath{
+    return self.myDataArray.count > indexPath.row ? self.myDataArray[indexPath.row]: nil;
+}
+
+#pragma mark UITableViewdataSource
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return ! self.myDataArray ? 0: self.myDataArray.count;
+}
+
+-(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier forIndexPath:indexPath];
+    id model = [self modelsAtIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    if(self.cellConfigBefore){
+        self.cellConfigBefore(cell, model, indexPath);
+    }
+    return cell;
+}
+
+-(NSMutableArray*) myDataArray{
+    if(!_myDataArray){
+        _myDataArray = [NSMutableArray arrayWithCapacity:10];
+    }
+    return _myDataArray;
+}
 
 @end

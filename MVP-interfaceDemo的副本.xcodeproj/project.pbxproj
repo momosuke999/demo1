@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F357C53022C463B600FFA4D7 /* MvpTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F357C52F22C463B600FFA4D7 /* MvpTextCell.m */; };
-		F357C53322C463D100FFA4D7 /* MvpTextPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F357C53122C463D100FFA4D7 /* MvpTextPresenter.m */; };
-		F357C53622C463EA00FFA4D7 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F357C53422C463EA00FFA4D7 /* TextViewController.m */; };
 		F357C53A22C49A3C00FFA4D7 /* dataSourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F357C53922C49A3C00FFA4D7 /* dataSourceModel.m */; };
 		F358AEFF22C5E68600224460 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F358AEE622C5E68600224460 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		F358AF0022C5E68600224460 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F358AEEF22C5E68600224460 /* ViewController+MASAdditions.m */; };
@@ -22,6 +19,8 @@
 		F358AF0722C5E68600224460 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F358AEFC22C5E68600224460 /* MASViewConstraint.m */; };
 		F358AF0822C5E68600224460 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F358AEFD22C5E68600224460 /* MASViewAttribute.m */; };
 		F358AF0922C5E68600224460 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F358AEFE22C5E68600224460 /* Info.plist */; };
+		F36A42AF22C9A74000265896 /* MvpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F36A42AE22C9A73F00265896 /* MvpCell.m */; };
+		F36A42B122C9F80900265896 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = F36A42B022C9F80900265896 /* data.txt */; };
 		F377551E22BC68CC00CF4A28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F377551D22BC68CC00CF4A28 /* AppDelegate.m */; };
 		F377552122BC68CC00CF4A28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F377552022BC68CC00CF4A28 /* ViewController.m */; };
 		F377552422BC68CC00CF4A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F377552222BC68CC00CF4A28 /* Main.storyboard */; };
@@ -52,12 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F357C52E22C463A600FFA4D7 /* MvpTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MvpTextCell.h; sourceTree = "<group>"; };
-		F357C52F22C463B600FFA4D7 /* MvpTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpTextCell.m; sourceTree = "<group>"; };
-		F357C53122C463D100FFA4D7 /* MvpTextPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpTextPresenter.m; sourceTree = "<group>"; };
-		F357C53222C463D100FFA4D7 /* MvpTextPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvpTextPresenter.h; sourceTree = "<group>"; };
-		F357C53422C463EA00FFA4D7 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
-		F357C53522C463EA00FFA4D7 /* TextViewController .h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TextViewController .h"; sourceTree = "<group>"; };
 		F357C53822C49A3000FFA4D7 /* dataSourceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dataSourceModel.h; sourceTree = "<group>"; };
 		F357C53922C49A3C00FFA4D7 /* dataSourceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dataSourceModel.m; sourceTree = "<group>"; };
 		F358AEE522C5E68600224460 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -88,6 +81,9 @@
 		F358AEFE22C5E68600224460 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F367428122C077EF003F7B37 /* MvpSubModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MvpSubModel.h; sourceTree = "<group>"; };
 		F367428222C07D5A003F7B37 /* MvpViewProtcol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MvpViewProtcol.h; sourceTree = "<group>"; };
+		F36A42AD22C9A73F00265896 /* MvpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvpCell.h; sourceTree = "<group>"; };
+		F36A42AE22C9A73F00265896 /* MvpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvpCell.m; sourceTree = "<group>"; };
+		F36A42B022C9F80900265896 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		F377551922BC68CC00CF4A28 /* MVP-interfaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-interfaceDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F377551C22BC68CC00CF4A28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F377551D22BC68CC00CF4A28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,8 +134,6 @@
 		F3290CEF22C1BEBA00DBF51F /* ViewController  */ = {
 			isa = PBXGroup;
 			children = (
-				F357C53522C463EA00FFA4D7 /* TextViewController .h */,
-				F357C53422C463EA00FFA4D7 /* TextViewController.m */,
 				F377551F22BC68CC00CF4A28 /* ViewController.h */,
 				F377552022BC68CC00CF4A28 /* ViewController.m */,
 			);
@@ -151,6 +145,7 @@
 			children = (
 				F357C53822C49A3000FFA4D7 /* dataSourceModel.h */,
 				F357C53922C49A3C00FFA4D7 /* dataSourceModel.m */,
+				F36A42B022C9F80900265896 /* data.txt */,
 			);
 			path = dataSourceModel;
 			sourceTree = "<group>";
@@ -251,8 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				F367428222C07D5A003F7B37 /* MvpViewProtcol.h */,
-				F357C53222C463D100FFA4D7 /* MvpTextPresenter.h */,
-				F357C53122C463D100FFA4D7 /* MvpTextPresenter.m */,
 				F377555722BC6A2D00CF4A28 /* MvpPresenter.h */,
 				F377555822BC6A3B00CF4A28 /* MvpPresenter.m */,
 			);
@@ -262,8 +255,8 @@
 		F377555B22BC6A5000CF4A28 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F357C52E22C463A600FFA4D7 /* MvpTextCell.h */,
-				F357C52F22C463B600FFA4D7 /* MvpTextCell.m */,
+				F36A42AD22C9A73F00265896 /* MvpCell.h */,
+				F36A42AE22C9A73F00265896 /* MvpCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,6 +378,7 @@
 				F377552922BC68CE00CF4A28 /* LaunchScreen.storyboard in Resources */,
 				F377552622BC68CE00CF4A28 /* Assets.xcassets in Resources */,
 				F377552422BC68CC00CF4A28 /* Main.storyboard in Resources */,
+				F36A42B122C9F80900265896 /* data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,13 +404,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F377552122BC68CC00CF4A28 /* ViewController.m in Sources */,
-				F357C53022C463B600FFA4D7 /* MvpTextCell.m in Sources */,
 				F358AF0422C5E68600224460 /* NSArray+MASAdditions.m in Sources */,
 				F377555522BC6A0200CF4A28 /* MvpModel.m in Sources */,
 				F358AF0522C5E68600224460 /* View+MASAdditions.m in Sources */,
 				F358AEFF22C5E68600224460 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				F358AF0122C5E68600224460 /* MASCompositeConstraint.m in Sources */,
-				F357C53622C463EA00FFA4D7 /* TextViewController.m in Sources */,
+				F36A42AF22C9A74000265896 /* MvpCell.m in Sources */,
 				F358AF0022C5E68600224460 /* ViewController+MASAdditions.m in Sources */,
 				F358AF0822C5E68600224460 /* MASViewAttribute.m in Sources */,
 				F358AF0722C5E68600224460 /* MASViewConstraint.m in Sources */,
@@ -427,7 +420,6 @@
 				F377552C22BC68CE00CF4A28 /* main.m in Sources */,
 				F377551E22BC68CC00CF4A28 /* AppDelegate.m in Sources */,
 				F358AF0622C5E68600224460 /* MASConstraint.m in Sources */,
-				F357C53322C463D100FFA4D7 /* MvpTextPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,7 +591,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LC94G25K76;
 				INFOPLIST_FILE = "MVP-interfaceDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -617,7 +609,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = LC94G25K76;
 				INFOPLIST_FILE = "MVP-interfaceDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
